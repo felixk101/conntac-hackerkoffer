@@ -1,0 +1,2 @@
+# conntac-hackerkoffer
+Baut einen Koffer voller Gadgets die Werte anzeigen, mit Schaltern, Schiebereglern, Warnleuchten, Notausschaltern und vieles mehr, die “Sachen” anzeigen und steuern. Welche “Sachen”? Alle die ihr wollt! Hier ein paar Beispiele für euch: Notausknopf für Git Merge-Konflikte, Warnleuchte für einen neuen Github Issue, Warnton für einen Email vom Chef... euch fällt schon was ein.
