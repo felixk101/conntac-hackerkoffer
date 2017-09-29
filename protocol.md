@@ -1,7 +1,7 @@
 ## Datenformat (senden und empfangen)
 ```t ID data;```
 
-t: Typ {A,D,P,C} analog, digital, patch, character
+t: Typ {A, I, O,P,C} analog, input, output, patch, character
 
 ID: Integer, der das Modul angibt
 
@@ -32,7 +32,7 @@ ID: 0-4 (linke Seite, von oben nach unten)
 Wert: 0-4 oder 255 (rechte Seite von oben nach unten oder nicht eingesteckt)
 
 ### Knöpfe
-Typ: `D`
+Typ: `I`
 
 ID: 
 * 0 Notaus
@@ -43,18 +43,13 @@ ID:
 * 13 Schlüsselschalter (rechts)
 * 14 Kippschalter des Todes (rechts)
 
-### Lüfter
-Typ: `D`
 
-ID: 17
-
-Wert: 0,1
 
 ## Output
 Output sind Dinge, die Informationen auf dem Board ausgeben
 
 ### LEDs
-Typ: `D`
+Typ: `O`
 
 ID:
 * 0-4 Reihe mitte
@@ -65,11 +60,18 @@ ID:
 Wert: 0,1
 
 ### Piepser
-Typ: `D`
+Typ: `O`
 
 ID:
 * 15 Hoch
 * 16 Tief
+
+Wert: 0,1
+
+### Lüfter
+Typ: `O`
+
+ID: 17
 
 Wert: 0,1
 
