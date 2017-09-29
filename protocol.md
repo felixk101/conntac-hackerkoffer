@@ -7,8 +7,6 @@ ID: Integer, der das Modul angibt
 
 data: Wert
 
-## Indexierung
-
 # Module
 ## Input
 Eingaben am Koffer.
@@ -46,8 +44,6 @@ ID:
 * 14 Kippschalter des Todes (rechts)
 
 ### Lüfter
-Ein/Aus
-
 Typ: `D`
 
 ID: 17
