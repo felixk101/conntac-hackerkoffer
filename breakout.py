@@ -13,6 +13,7 @@ class Game:
         self.display = np.zeros(shape=(DSP_W, DSP_H), dtype=np.int16)
         self.player = Player()
         self.ball = Ball()
+        self.wall = Wall()
 
 
         self.bricks = []
@@ -30,6 +31,7 @@ class Game:
 
     def render(self):
         new_display = np.zeros(shape=(DSP_W, DSP_H), dtype=np.int16)
+        self.wall.render(new_display)
         self.player.render(new_display)
         self.ball.render(new_display)
         for brick in self.bricks:
@@ -90,7 +92,6 @@ class Ball(Entity):
     def __init__(self):
         super().__init__((64, 25), 5)
         self.height = self.width
-        self.direction = (0, 1)
         self.rotation = 180
 
     def calc_new_pos(self):
@@ -98,7 +99,7 @@ class Ball(Entity):
 
     @property
     def direction(self):
-        return rotate(np.array((1.0, 0.0)), self.rotation)
+        return rotate(np.array((0.0, -1.0)), self.rotation)
 
     @direction.setter
     def direction(self, dir) -> None:
@@ -109,6 +110,19 @@ class Ball(Entity):
 class Brick(Entity):
     def __init__(self, pos):
         super().__init__(pos, BR_W)
+
+
+class Wall:
+    def __init__(self):
+        self.wall = np.zeros(shape=(DSP_W, DSP_H), dtype=np.int16)
+        for y in range(DSP_H):
+            self.wall[0, y] = 1
+            self.wall[DSP_W - 1, y] = 1
+        for x in range(DSP_W):
+            self.wall[x, 0] = 1
+
+    def render(self, display):
+        display += self.wall
 
 
 def rotate(vector, degrees):
