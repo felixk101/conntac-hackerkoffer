@@ -5,12 +5,19 @@ import time
 DSP_W = 128
 DSP_H = 64
 
+BR_W = 13
+
 class Game:
     def __init__(self):
         self.display = np.zeros(shape=(DSP_W, DSP_H), dtype=np.int16)
         self.player = Player()
         self.ball = Ball()
-        self.bricks = [Brick((10, 10))]
+
+
+        self.bricks = []
+        for rowpos in range(5):
+            for colpos in range(8):
+                self.bricks.append(Brick((colpos * (BR_W+3) + 1 + BR_W/2, 2 + rowpos * 4)))
 
 
 
@@ -30,12 +37,13 @@ class Game:
         print('\n'*80) # prints 80 line breaks
         print("-" * 128)
         for row in self.display.T:
+            print("|", end="")
             for pixel in row:
                 if pixel == 0:
                     print(" ", end="")
                 else:
                     print("X", end="")
-            print("")
+            print("|")
         print("-" * 128)
 
 
@@ -43,7 +51,7 @@ class Entity:
     def __init__(self, pos, width):
         self.pos = pos
         self.width = width
-        self.height = 11
+        self.height = 3
 
     def render(self, display):
         for y in range(int(self.pos[1] - (self.height - 1) / 2),
@@ -55,7 +63,7 @@ class Entity:
 
 class Player(Entity):
     def __init__(self):
-        super().__init__((64, 6), 31)
+        super().__init__((64, 60), 31)
 
 
 class Ball(Entity):
@@ -66,7 +74,7 @@ class Ball(Entity):
 
 class Brick(Entity):
     def __init__(self, pos):
-        super().__init__(pos, 21)
+        super().__init__(pos, BR_W)
 
 
 if __name__ == '__main__':
