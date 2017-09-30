@@ -88,10 +88,8 @@ class Game:
 
     def print_score(self):
         digits = str(self.score)
-        self.koffer.seg7_number(0, int(digits[0]))
-        self.koffer.seg7_number(1, int(digits[1]))
-        self.koffer.seg7_number(2, int(digits[2]))
-        self.koffer.seg7_number(3, int(digits[3]))
+        for i in range(len(digits)):
+            self.koffer.seg7_number(i, int(digits[i]))
 
     def print_display(self):
         str = '\n'*60
