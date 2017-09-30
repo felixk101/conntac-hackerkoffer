@@ -15,7 +15,7 @@ data: Wert
 Eingaben am Koffer.
 
 ### Potis
-Signal kommt bei Veränderung um 10.
+Signal kommt bei Veränderung um mindestens 10.
 
 Typ: `A`
 
