@@ -3,14 +3,17 @@ import time
 
 def handle_inputs(id, value):
     # turn LEDs depending on switches
-    if id >= 6 and id <=10:
+    if id >= 6 and id <=9:
         hackerkoffer._led(id-6, value)
+
+    if id == 10:
+        pass
 
     if id == 12 or id == 13:
         hackerkoffer._led(id-7, value)
 
     if id >= 1 and id <= 5:
-        piepser = 16 if hackerkoffer.poti[2] > 4000 and hackerkoffer.poti[3] > 4000 else 15
+        piepser = 16 if hackerkoffer.poti[0] > 4000 and hackerkoffer.poti[1] > 4000 else 15
         hackerkoffer._piepser(piepser, value)
 
     if id == 11 or id == 14:
