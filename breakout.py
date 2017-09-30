@@ -218,7 +218,7 @@ def angle(vector_a, vector_b):
 
 
 if __name__ == '__main__':
-    game = Game(None)
+    game = Game(hackerkoffer)
     hackerkoffer.callback_potis = game.handle_poti
     start()
     game.start_game()
