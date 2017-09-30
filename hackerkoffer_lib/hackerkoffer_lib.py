@@ -45,7 +45,7 @@ class Hackerkoffer:
         print("Patchpanel %d -> %d" % (id_from, id_to))
 
     def _led(self, id, state=0):
-        self.ser.write(b"O %d %d;" % (id, state))
+        self.ser.write(bytes("O %d %d;" % (id, state), "utf-8"))
         self.led[id] = state
 
     def led_on(self, id):
@@ -56,7 +56,7 @@ class Hackerkoffer:
 
     # frequency not used yet
     def _piepser(self, id, state=0, frequency=0):
-        self.ser.write(b"O %d %d;" % (id, state))
+        self.ser.write(bytes("O %d %d;" % (id, state), "utf-8"))
         self.input[id] = state
 
     def piepser_on(self, id, frequency=0):
@@ -67,7 +67,7 @@ class Hackerkoffer:
         self._piepser(id, 0, frequency)
 
     def _fan(self, id, state=0, frequency=0):
-        self.ser.write(b"O %d %d;" % (id, state))
+        self.ser.write(bytes("O %d %d;" % (id, state), "utf-8"))
         self.input[id] = state
 
     def fan_on(self, id, frequency=0):
@@ -78,14 +78,14 @@ class Hackerkoffer:
 
     # display
     def seg7_raw(self, id, raw):
-        self.ser.write(b"c %d %d;" % (id, int(raw)))
+        self.ser.write(bytes("c %d %d;" % (id, int(raw))))
         self.seg7[id] = int(raw)
 
     def seg7_number(self, id, number):
         self.seg7_raw(id, self.SEG7_NUMBERS[number])
 
     def set_pixel(self, x, y, state):
-        self.ser.write(b"d %d %d %d" % (x,y,state))
+        self.ser.write(bytes("d %d %d %d" % (x,y,state), "utf-8"))
         self.display[x][y] = state
 
 
