@@ -4,7 +4,7 @@ Hinweis: `D = I`
 ## Datenformat (senden und empfangen)
 ```t ID data;```
 
-t: Typ {A, I, O,P,C} analog, input, output, patch, character
+t: Typ {A, I, O, P, C, D} analog, input, output, patch, character, display
 
 ID: Integer, der das Modul angibt
 
@@ -79,6 +79,8 @@ ID: 17
 Wert: 0,1
 
 ### 7-Segment-Display
+Bitmaske (Dezimal) senden, um Zahl zu setzen.
+
 Typ: `C`
 
 ID: 0-3 (rechts nach links)
@@ -93,3 +95,15 @@ Wert:
 * Bottom Right 64
 * Dot 128
 * Blank 0
+
+## DISPLAY
+OLED-Display, wird mit x,y Koordinate angesteuert.
+
+Typ: `D`
+
+ID: 0
+
+Wert:  `x y z`
+* x 0-127
+* y 0-63
+* z (0,1) off/on
