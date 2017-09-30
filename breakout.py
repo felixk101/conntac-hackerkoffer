@@ -3,6 +3,7 @@ import itertools
 import time
 import random
 import math
+import os
 
 import numpy as np
 
@@ -14,12 +15,13 @@ DSP_H = 64
 BR_W = 13
 
 class Game:
-    def __init__(self):
+    def __init__(self, koffer):
         self.init_game()
         self.slider_pos = 0
+        self.koffer = koffer
 
     def handle_poti(self, id, value):
-        if not id == "A3": return
+        if not id == 3: return
         self.slider_pos = value
 
     def start_game(self):
@@ -33,7 +35,10 @@ class Game:
         self.player = Player()
         self.ball = Ball()
         self.wall = Wall()
-        self.lives = 3
+        self.score = 0
+        self.lives = 4
+        for i in range(4):
+            self.koffer.led_on(i+7)
 
         self.bricks = []
         for rowpos in range(5):
@@ -41,6 +46,7 @@ class Game:
                 self.bricks.append(Brick((colpos * (BR_W+3) + 1 + BR_W/2, 2 + rowpos * 4)))
 
     def game_over(self):
+        self.koffer.led_off(self.lives + 6)
         self.lives -= 1
         if self.lives <= 0:
             self.init_game()
@@ -58,12 +64,18 @@ class Game:
             if np.any(result):
                 slice = result[self.ball.x_min:self.ball.x_max + 1, self.ball.y_min:self.ball.y_max + 1]
                 self.ball.bounce(slice)
+                if type(entity) == type(Brick):
+                    self.score += 100
                 try:
                     self.bricks.remove(entity)
                 except ValueError:
                     continue
+        if len(self.bricks) == 0:
+            time.sleep(3)
+            self.init_game()
 
     def render(self):
+        os.system('clear')
         new_display = np.zeros(shape=(DSP_W, DSP_H), dtype=np.int16)
         self.wall.render(new_display)
         self.player.render(new_display)
@@ -72,6 +84,14 @@ class Game:
             brick.render(new_display)
         self.display = new_display
         self.print_display()
+        self.print_score()
+
+    def print_score(self):
+        digits = str(self.score)
+        self.koffer.seg7_number(0, int(digits[0]))
+        self.koffer.seg7_number(1, int(digits[1]))
+        self.koffer.seg7_number(2, int(digits[2]))
+        self.koffer.seg7_number(3, int(digits[3]))
 
     def print_display(self):
         str = '\n'*60
@@ -119,8 +139,10 @@ class Entity:
     def render(self, display):
         for y in range(self.y_min, self.y_max + 1):
             for x in range(self.x_min, self.x_max + 1):
+                if x < 0 or x > DSP_W: continue
+                if y < 0 or y > DSP_H: continue
                 try:
-                    display[x][y] = 1
+                    display[x, y] = 1
                 except IndexError:
                     continue
 
@@ -132,7 +154,7 @@ class Entity:
 
 class Player(Entity):
     def __init__(self):
-        super().__init__((64, 60), 31)
+        super().__init__((0, 60), 31)
 
 
 class Ball(Entity):
@@ -196,7 +218,7 @@ def angle(vector_a, vector_b):
 
 
 if __name__ == '__main__':
-    game = Game()
+    game = Game(hackerkoffer)
     hackerkoffer.callback_potis = game.handle_poti
     start()
     game.start_game()
