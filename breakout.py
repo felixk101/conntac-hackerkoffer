@@ -6,6 +6,8 @@ import math
 import os
 
 import numpy as np
+from PIL import Image
+import Adafruit_SSD1306
 
 from hackerkoffer_lib.hackerkoffer_lib import start, hackerkoffer
 
@@ -19,6 +21,8 @@ class Game:
         self.koffer = koffer
         self.init_game()
         self.slider_pos = 0
+        self.oled = Adafruit_SSD1306.SSD1306_128_64(rst=24)
+        self.oled.begin()
 
     def handle_poti(self, id, value):
         if not id == 3: return
@@ -83,7 +87,8 @@ class Game:
         for brick in self.bricks:
             brick.render(new_display)
         self.display = new_display
-        self.print_display()
+        #self.print_display()
+        self.write_oled()
         self.print_score()
 
     def print_score(self):
@@ -105,6 +110,18 @@ class Game:
         str += "-" * 128 + "\n"
         print(str)
 
+    def write_oled(self):
+        self.oled.clear()
+        img = Image.new('RGB', (128, 64), "white")
+        pixels = img.load()
+        for i in range(img.size[0]):
+            for j in range(img.size[1]):
+                if self.display[i, j]:
+                    pixels[i, j] = (255, 255, 255)
+                else:
+                    pixels[i, j] = (0, 0, 0)
+        self.oled.image(img)
+        self.oled.display()
 
 class Entity:
     def __init__(self, pos, width):
