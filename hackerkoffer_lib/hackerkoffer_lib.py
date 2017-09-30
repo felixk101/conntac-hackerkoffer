@@ -35,6 +35,16 @@ class Hackerkoffer:
         for i in range(4):
             self.seg7.append(self.SEG7_CLEAR)
 
+    def write(self, data):
+        print(data)
+        #self.ser.write(bytes(data, "utf-8"))
+
+        for c in data:
+            self.ser.write(bytes(c, "utf-8"))
+
+        while serial.outWaiting() > 0:
+            pass
+
     def callback_inputs(self, id, value):
         print("Input %d: %d" % (id, value))
 
@@ -45,7 +55,7 @@ class Hackerkoffer:
         print("Patchpanel %d -> %d" % (id_from, id_to))
 
     def _led(self, id, state=0):
-        self.ser.write(bytes("O %d %d;" % (id, state), "utf-8"))
+        self.write("O %d %d;" % (id, state))
         self.led[id] = state
 
     def led_on(self, id):
@@ -56,7 +66,7 @@ class Hackerkoffer:
 
     # frequency not used yet
     def _piepser(self, id, state=0, frequency=0):
-        self.ser.write(bytes("O %d %d;" % (id, state), "utf-8"))
+        self.write("O %d %d;" % (id, state))
         self.input[id] = state
 
     def piepser_on(self, id, frequency=0):
@@ -67,7 +77,8 @@ class Hackerkoffer:
         self._piepser(id, 0, frequency)
 
     def _fan(self, id, state=0, frequency=0):
-        self.ser.write(bytes("O %d %d;" % (id, state), "utf-8"))
+        self.write("O %d %d;" % (id, state))
+
         self.input[id] = state
 
     def fan_on(self, id, frequency=0):
@@ -78,14 +89,14 @@ class Hackerkoffer:
 
     # display
     def seg7_raw(self, id, raw):
-        self.ser.write(bytes("c %d %d;" % (id, int(raw))))
+        self.write("C %d %d;" % (id, int(raw)))
         self.seg7[id] = int(raw)
 
     def seg7_number(self, id, number):
         self.seg7_raw(id, self.SEG7_NUMBERS[number])
 
     def set_pixel(self, x, y, state):
-        self.ser.write(bytes("d %d %d %d" % (x,y,state), "utf-8"))
+        self.write("D %d %d %d" % (x,y,state))
         self.display[x][y] = state
 
 
