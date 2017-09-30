@@ -25,7 +25,7 @@ class Hackerkoffer:
         for i in range(4):
             self.poti.append(0)
 
-        for i in range(4):
+        for i in range(5):
             self.patchpanel.append(255)
 
         for i in range(11):
