@@ -1,0 +1,52 @@
+import asyncio
+import serial_asyncio
+import time
+from pygame import mixer  # Load the required library
+
+
+class Output(asyncio.Protocol):
+    def connection_made(self, transport):
+        self.transport = transport
+        print('port opened, playing a little melody', transport)
+        transport.write(b'I 15 1;')  
+        time.sleep(200.0 / 1000.0)
+        transport.write(b'I 15 0;')
+        time.sleep(150.0 / 1000.0)  
+        transport.write(b'I 15 1;')  
+        time.sleep(200.0 / 1000.0)
+        transport.write(b'I 15 0;')
+        time.sleep(150.0 / 1000.0)  
+        transport.write(b'I 15 1;')  
+        time.sleep(200.0 / 1000.0)
+        transport.write(b'I 15 0;')
+        time.sleep(150.0 / 1000.0) 
+        transport.write(b'I 16 1;')
+        time.sleep(850.0 / 1000.0)
+        transport.write(b'I 16 0;')
+
+
+    def data_received(self, data):
+        command = data.decode('utf-8').replace('I','i').replace('\n', '').replace(' ','_').replace(';','');
+        print("from serial: " + data.decode('utf-8').replace('\n', ''))
+        mixer.init()
+        mixer.music.load('sounds/' + command + '.mp3')
+        mixer.music.play()
+
+
+    def connection_lost(self, exc):
+        print('port closed')
+        self.transport.loop.stop()
+
+    def pause_writing(self):
+        print('pause writing')
+        print(self.transport.get_write_buffer_size())
+
+    def resume_writing(self):
+        print(self.transport.get_write_buffer_size())
+        print('resume writing')
+
+loop = asyncio.get_event_loop()
+coro = serial_asyncio.create_serial_connection(loop, Output, '/dev/pts/2', baudrate=115200)
+loop.run_until_complete(coro)
+loop.run_forever()
+loop.close()
