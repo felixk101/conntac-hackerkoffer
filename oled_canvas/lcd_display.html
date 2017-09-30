@@ -2,18 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>LCD Display</title>
+    <title>conntac-hackerkiste-oled-simulator</title>
+    <style>
+        .img {
+            position: absolute;
+            z-index: 1;
+            width: 700px;
+        }
+        /* 1300/2-(256/2) */
+        #lcd_canvas{ 
+            position: relative;
+            z-index: 20;
+            left: 222px;
+            top: 210px;
+            background-color: #000000;
+        }
+        #koffer-svg {
+            position: absolute;
+            top: 8px;
+            left: 650px;
+            width: 700px;
+        }
+    </style>
+    
 </head>
 <body>
 
-    <!--
-    <canvas id="lcd_canvas" width="512" height="256">
-        Your browser does not support the canvas type
-    </canvas>
+    <div id="container">
+        <div id="wrapper">
+            <img class="img" src="../conntac-hackerkoffer-deckel.png" alt="conntac-hackerkoffer-deckel" />
+            <canvas id="lcd_canvas" width="256" height="128">
+                Your browser does not support the canvas type
+            </canvas>
+        </div>
+        <object id="koffer-svg" type="image/svg+xml" data="../conntac-hackerkoffer.svg"></object>
+    </div>
 
     <script type="text/javascript" src="lcd_display.js"></script>
-    -->
+    <script type="text/javascript" src="hacker_koffer.js"></script>
 
-    <img src="">
 </body>
 </html>

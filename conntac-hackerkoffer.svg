@@ -192,89 +192,96 @@
     <circle id="ring-32" data-name="ring" cx="890" cy="592" r="24.5" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
     <circle id="ring-33" data-name="ring" cx="890" cy="592" r="20.5" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
     <circle id="ring-34" data-name="ring" cx="890.5" cy="591.5" r="13" style="fill: gray;stroke: #e6e6e6;stroke-miterlimit: 10"/>
-    <path id="LED" d="M902,616.5c0,9.1-2,16.5-11.5,16.5S879,625.6,879,616.5s5.1-16.5,11.5-16.5S902,607.4,902,616.5Z" style="fill: #fa2936"/>
+    <path id="circle" d="M902,616.5c0,9.1-2,16.5-11.5,16.5S879,625.6,879,616.5s5.1-16.5,11.5-16.5S902,607.4,902,616.5Z" style="fill: #fa2936"/>
     <path d="M896,595H885v-7c2-4,9-4,11,0Z" style="fill: #854f3b"/>
-    <circle id="LED-2" data-name="LED" cx="890.5" cy="603.5" r="14.5" style="fill: #fa2936"/>
+    <circle id="circle-2" data-name="circle" cx="890.5" cy="603.5" r="14.5" style="fill: #fa2936"/>
+    <circle id="flipped" cx="891" cy="591" r="29" style="fill: #b5bab3"/>
+    <circle id="flipped-2" data-name="flipped" cx="891" cy="591" r="24.5" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="flipped-3" data-name="flipped" cx="891" cy="591" r="20.5" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="flipped-4" data-name="flipped" cx="890.5" cy="591.5" r="13" style="fill: gray;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <path id="flipped-5" data-name="flipped" d="M879,566.5c0-9.1,2-16.5,11.5-16.5s11.5,7.4,11.5,16.5S896.9,583,890.5,583,879,575.6,879,566.5Z" style="fill: #fa2936"/>
+    <path id="flipped-6" data-name="flipped" d="M885,588h11v7c-2,4-9,4-11,0Z" style="fill: #854f3b"/>
+    <circle id="flipped-7" data-name="flipped" cx="890.5" cy="579.5" r="14.5" style="fill: #fa2936"/>
   </g>
   <g id="I9">
     <circle id="ring-35" data-name="ring" cx="801" cy="592" r="29" style="fill: #b5bab3"/>
     <circle id="ring-36" data-name="ring" cx="801" cy="592" r="24.5" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
     <circle id="ring-37" data-name="ring" cx="801" cy="592" r="20.5" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
     <circle id="ring-38" data-name="ring" cx="801.5" cy="591.5" r="13" style="fill: gray;stroke: #e6e6e6;stroke-miterlimit: 10"/>
-    <path id="LED-3" data-name="LED" d="M813,616.5c0,9.1-2,16.5-11.5,16.5S790,625.6,790,616.5s5.1-16.5,11.5-16.5S813,607.4,813,616.5Z" style="fill: #fa2936"/>
+    <path id="circle-3" data-name="circle" d="M813,616.5c0,9.1-2,16.5-11.5,16.5S790,625.6,790,616.5s5.1-16.5,11.5-16.5S813,607.4,813,616.5Z" style="fill: #fa2936"/>
     <path d="M807,595H796v-7c2-4,9-4,11,0Z" style="fill: #854f3b"/>
-    <circle id="LED-4" data-name="LED" cx="801.5" cy="603.5" r="14.5" style="fill: #fa2936"/>
+    <circle id="circle-4" data-name="circle" cx="801.5" cy="603.5" r="14.5" style="fill: #fa2936"/>
   </g>
   <g id="I8">
     <circle id="ring-39" data-name="ring" cx="712" cy="592" r="29" style="fill: #b5bab3"/>
     <circle id="ring-40" data-name="ring" cx="712" cy="592" r="24.5" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
     <circle id="ring-41" data-name="ring" cx="712" cy="592" r="20.5" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
     <circle id="ring-42" data-name="ring" cx="712.5" cy="591.5" r="13" style="fill: gray;stroke: #e6e6e6;stroke-miterlimit: 10"/>
-    <path id="LED-5" data-name="LED" d="M724,616.5c0,9.1-2,16.5-11.5,16.5S701,625.6,701,616.5s5.1-16.5,11.5-16.5S724,607.4,724,616.5Z" style="fill: #fa2936"/>
+    <path id="circle-5" data-name="circle" d="M724,616.5c0,9.1-2,16.5-11.5,16.5S701,625.6,701,616.5s5.1-16.5,11.5-16.5S724,607.4,724,616.5Z" style="fill: #fa2936"/>
     <path d="M718,595H707v-7c2-4,9-4,11,0Z" style="fill: #854f3b"/>
-    <circle id="LED-6" data-name="LED" cx="712.5" cy="603.5" r="14.5" style="fill: #fa2936"/>
+    <circle id="circle-6" data-name="circle" cx="712.5" cy="603.5" r="14.5" style="fill: #fa2936"/>
   </g>
   <g id="I7">
     <circle id="ring-43" data-name="ring" cx="622" cy="592" r="29" style="fill: #b5bab3"/>
     <circle id="ring-44" data-name="ring" cx="622" cy="592" r="24.5" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
     <circle id="ring-45" data-name="ring" cx="622" cy="592" r="20.5" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
     <circle id="ring-46" data-name="ring" cx="622.5" cy="591.5" r="13" style="fill: gray;stroke: #e6e6e6;stroke-miterlimit: 10"/>
-    <path id="LED-7" data-name="LED" d="M634,616.5c0,9.1-2,16.5-11.5,16.5S611,625.6,611,616.5s5.1-16.5,11.5-16.5S634,607.4,634,616.5Z" style="fill: #fa2936"/>
+    <path id="circle-7" data-name="circle" d="M634,616.5c0,9.1-2,16.5-11.5,16.5S611,625.6,611,616.5s5.1-16.5,11.5-16.5S634,607.4,634,616.5Z" style="fill: #fa2936"/>
     <path d="M628,595H617v-7c2-4,9-4,11,0Z" style="fill: #854f3b"/>
-    <circle id="LED-8" data-name="LED" cx="622.5" cy="603.5" r="14.5" style="fill: #fa2936"/>
+    <circle id="circle-8" data-name="circle" cx="622.5" cy="603.5" r="14.5" style="fill: #fa2936"/>
   </g>
   <g id="I6">
     <circle id="ring-47" data-name="ring" cx="533" cy="592" r="29" style="fill: #b5bab3"/>
     <circle id="ring-48" data-name="ring" cx="533" cy="592" r="24.5" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
     <circle id="ring-49" data-name="ring" cx="533" cy="592" r="20.5" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
     <circle id="ring-50" data-name="ring" cx="533.5" cy="591.5" r="13" style="fill: gray;stroke: #e6e6e6;stroke-miterlimit: 10"/>
-    <path id="LED-9" data-name="LED" d="M545,616.5c0,9.1-2,16.5-11.5,16.5S522,625.6,522,616.5s5.1-16.5,11.5-16.5S545,607.4,545,616.5Z" style="fill: #fa2936"/>
+    <path id="circle-9" data-name="circle" d="M545,616.5c0,9.1-2,16.5-11.5,16.5S522,625.6,522,616.5s5.1-16.5,11.5-16.5S545,607.4,545,616.5Z" style="fill: #fa2936"/>
     <path d="M539,595H528v-7c2-4,9-4,11,0Z" style="fill: #854f3b"/>
-    <circle id="LED-10" data-name="LED" cx="533.5" cy="603.5" r="14.5" style="fill: #fa2936"/>
+    <circle id="circle-10" data-name="circle" cx="533.5" cy="603.5" r="14.5" style="fill: #fa2936"/>
   </g>
   <g id="O10">
     <circle id="ring-51" data-name="ring" cx="848" cy="897" r="29" style="fill: #b5bab3"/>
-    <circle id="LED-11" data-name="LED" cx="848" cy="897" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <circle id="LED_O10" cx="848" cy="897" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
   </g>
   <g id="O9">
     <circle id="ring-52" data-name="ring" cx="757" cy="897" r="29" style="fill: #b5bab3"/>
-    <circle id="LED-12" data-name="LED" cx="757" cy="897" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <circle id="LED_O9" cx="757" cy="897" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
   </g>
   <g id="O8">
     <circle id="ring-53" data-name="ring" cx="670" cy="897" r="29" style="fill: #b5bab3"/>
-    <circle id="LED-13" data-name="LED" cx="670" cy="897" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <circle id="LED_O8" cx="670" cy="897" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
   </g>
   <g id="O7">
     <circle id="ring-54" data-name="ring" cx="581" cy="897" r="29" style="fill: #b5bab3"/>
-    <circle id="LED-14" data-name="LED" cx="581" cy="897" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <circle id="LED_O7" cx="581" cy="897" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
   </g>
   <g id="O6">
     <circle id="ring-55" data-name="ring" cx="1046" cy="684" r="29" style="fill: #b5bab3"/>
-    <circle id="LED-15" data-name="LED" cx="1046" cy="684" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <circle id="LED_O6" cx="1046" cy="684" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
   </g>
   <g id="O5">
     <circle id="ring-56" data-name="ring" cx="377" cy="684" r="29" style="fill: #b5bab3"/>
-    <circle id="LED-16" data-name="LED" cx="377" cy="684" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <circle id="LED_O5" cx="377" cy="684" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
   </g>
   <g id="O4">
     <circle id="ring-57" data-name="ring" cx="890" cy="515" r="29" style="fill: #b5bab3"/>
-    <circle id="LED-17" data-name="LED" cx="890" cy="515" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <circle id="LED_O4" cx="890" cy="515" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
   </g>
   <g id="O3">
     <circle id="ring-58" data-name="ring" cx="801" cy="515" r="29" style="fill: #b5bab3"/>
-    <circle id="LED-18" data-name="LED" cx="801" cy="515" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <circle id="LED_O3" cx="801" cy="515" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
   </g>
   <g id="O2">
     <circle id="ring-59" data-name="ring" cx="712.3" cy="515.5" r="29" style="fill: #b5bab3"/>
-    <circle id="LED-19" data-name="LED" cx="712.3" cy="515.5" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <circle id="LED_O2" cx="712.3" cy="515.5" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
   </g>
   <g id="O1">
     <circle id="ring-60" data-name="ring" cx="622.3" cy="515.5" r="29" style="fill: #b5bab3"/>
-    <circle id="LED-20" data-name="LED" cx="622.3" cy="515.5" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <circle id="LED_O1" cx="622.3" cy="515.5" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
   </g>
   <g id="O0">
     <circle id="ring-61" data-name="ring" cx="533.5" cy="515.5" r="29" style="fill: #b5bab3"/>
-    <circle id="LED-21" data-name="LED" cx="533.5" cy="515.5" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <circle id="LED_O0" cx="533.5" cy="515.5" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
   </g>
   <g id="I11">
     <rect x="156.2" y="675" width="97.3" height="258" rx="12.7" ry="12.7" style="stroke: #666;stroke-miterlimit: 10"/>
@@ -286,7 +293,7 @@
     <path d="M164.5,666H175a0,0,0,0,1,0,0V862a0,0,0,0,1,0,0H156.5a0,0,0,0,1,0,0V674A8,8,0,0,1,164.5,666Z" style="fill: #fa2936;opacity: 0.7000000000000001"/>
     <rect x="172" y="751" width="66" height="17" style="fill: #fa2936;opacity: 0.7000000000000001"/>
     <circle cx="205.5" cy="831.5" r="20" style="fill: gray;stroke: #e6e6e6;stroke-miterlimit: 10"/>
-    <circle cx="206" cy="832" r="15" style="fill: #fa2936"/>
+    <circle id="LED_I11" cx="206" cy="832" r="15" style="fill: #fa2936"/>
   </g>
   <g id="I14">
     <rect x="1167.2" y="674" width="97.3" height="258" rx="12.7" ry="12.7" style="stroke: #666;stroke-miterlimit: 10"/>
@@ -298,6 +305,53 @@
     <path d="M1175.5,665H1186a0,0,0,0,1,0,0V861a0,0,0,0,1,0,0h-18.5a0,0,0,0,1,0,0V673A8,8,0,0,1,1175.5,665Z" style="fill: #fa2936;opacity: 0.7000000000000001"/>
     <rect x="1183" y="750" width="66" height="17" style="fill: #fa2936;opacity: 0.7000000000000001"/>
     <circle cx="1216.5" cy="830.5" r="20" style="fill: gray;stroke: #e6e6e6;stroke-miterlimit: 10"/>
-    <circle cx="1217" cy="831" r="15" style="fill: #fa2936"/>
+    <circle id="LED_I14" cx="1217" cy="831" r="15" style="fill: #fa2936"/>
+  </g>
+  <g id="Beschriftung">
+    <text transform="translate(245.7 256.8)" style="font-size: 36px;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">I0</text>
+    <text transform="translate(423.1 175.5)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">C3</text>
+    <text transform="translate(510.1 174.8)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">C2</text>
+    <text transform="translate(594.1 174.8)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">C1</text>
+    <text transform="translate(673.1 174.8)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">C0</text>
+    <text transform="translate(811.1 175.5)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">A0</text>
+    <text transform="translate(931.1 175.8)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">A1</text>
+    <text transform="translate(1057.1 175.8)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">O17</text>
+    <text transform="translate(511.3 461.5)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">O0</text>
+    <text transform="translate(600.3 460.8)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">O1</text>
+    <text transform="translate(692.3 460.8)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">O2</text>
+    <text transform="translate(778.3 461.8)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">O3</text>
+    <text transform="translate(870.3 461.8)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">O4</text>
+    <text transform="translate(516.7 670.5)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">I6</text>
+    <text transform="translate(605.7 669.8)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">I7</text>
+    <text transform="translate(697.7 669.8)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">I8</text>
+    <text transform="translate(783.7 670.8)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">I9</text>
+    <text transform="translate(867.5 670.8)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">I10</text>
+    <text transform="translate(573.1 740.5)" style="font-size: 36px;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">A2</text>
+    <text transform="translate(819.1 819.5)" style="font-size: 36px;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">A3</text>
+    <text transform="translate(556.3 963.8)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">O7</text>
+    <text transform="translate(648.3 963.8)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">O8</text>
+    <text transform="translate(734.3 964.8)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">O9</text>
+    <text transform="translate(818.1 964.8)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">O10</text>
+    <text transform="translate(1195.5 965.8)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">I14</text>
+    <text transform="translate(186.3 965.8)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">I<tspan x="8.2" y="0" style="letter-spacing: -0.044921875em">1</tspan><tspan x="23" y="0">1</tspan></text>
+    <text transform="translate(1248.9 445.5)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">P0</text>
+    <text transform="translate(1248.9 526.5)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">P2</text>
+    <text transform="translate(1248.9 607.5)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">P4</text>
+    <text transform="translate(1167.9 487.5)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">P1</text>
+    <text transform="translate(1167.9 569.5)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">P3</text>
+    <text transform="translate(985.9 447.5)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">P0</text>
+    <text transform="translate(985.9 528.5)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">P2</text>
+    <text transform="translate(985.9 607.5)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">P4</text>
+    <text transform="translate(984.9 487.5)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">P1</text>
+    <text transform="translate(984.9 567.5)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">P3</text>
+    <text transform="translate(352.5 964.8)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">I12</text>
+    <text transform="translate(1030.5 967.8)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">I13</text>
+    <text transform="translate(413.3 670.5)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">O5</text>
+    <text transform="translate(1078.3 662.5)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">O6</text>
+    <text transform="translate(307.7 404.5)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">I1</text>
+    <text transform="translate(307.7 486.5)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">I3</text>
+    <text transform="translate(382.7 486.5)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">I4</text>
+    <text transform="translate(307.7 569.5)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">I5</text>
+    <text transform="translate(225.7 486.5)" style="font-size: 36px;fill: #ff0;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">I2</text>
   </g>
 </svg>
