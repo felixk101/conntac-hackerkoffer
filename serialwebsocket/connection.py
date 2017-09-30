@@ -50,7 +50,7 @@ class Output(asyncio.Protocol):
         print('resume writing')
 
 loop = asyncio.get_event_loop()
-coro = serial_asyncio.create_serial_connection(loop, Output, '/dev/pts/2', baudrate=115200)
+coro = serial_asyncio.create_serial_connection(loop, Output, '/dev/pts/4', baudrate=115200)
 loop.run_until_complete(coro)
 loop.run_until_complete(start_server)
 loop.run_forever()
