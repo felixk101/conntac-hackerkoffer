@@ -1,5 +1,6 @@
 from hackerkoffer_lib import start, hackerkoffer
 import time
+import nyan as nyan
 
 def handle_inputs(id, value):
     # turn LEDs depending on switches
@@ -7,6 +8,7 @@ def handle_inputs(id, value):
         hackerkoffer._led(id-6, value)
 
     if id == 10:
+        nyan.nyan()
         pass
 
     if id == 12 or id == 13:
