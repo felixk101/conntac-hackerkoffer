@@ -1,4 +1,4 @@
-
+import math
 import numpy as np
 import time
 
@@ -81,7 +81,7 @@ class Ball(Entity):
 
     @property
     def direction(self):
-        return util.rotate(np.array((1.0, 0.0)), self.rotation)
+        return rotate(np.array((1.0, 0.0)), self.rotation)
 
     @direction.setter
     def direction(self, dir) -> None:
@@ -92,6 +92,27 @@ class Ball(Entity):
 class Brick(Entity):
     def __init__(self, pos):
         super().__init__(pos, BR_W)
+
+
+def rotate(vector, degrees):
+    a = np.radians(degrees)
+    ca, sa = math.cos(a), math.sin(a)
+    rotation_matrix = np.array(
+        [[ca, -sa],
+         [sa, ca]])
+    result = rotation_matrix.dot(vector)
+    return result
+
+
+def cut_to_length(vector, length):
+    return length * (vector / np.linalg.norm(vector))
+
+
+def angle(vector_a, vector_b):
+    if np.linalg.norm(vector_a) == 0 or np.linalg.norm(vector_b) == 0:
+        return 0
+    else:
+        return (vector_a * vector_b) / (np.linalg.norm(vector_a) * np.linalg.norm(vector_b))
 
 
 if __name__ == '__main__':
