@@ -1,4 +1,4 @@
-![Layout](layout.png)
+![Layout](conntac-hackerkoffer-layout.png)
 Hinweis: `D = I`
 
 ## Datenformat (senden und empfangen)
