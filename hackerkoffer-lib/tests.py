@@ -82,6 +82,32 @@ def test_potis():
         wait_on_poti_max(i)
 
 
+def wait_on_panel_plug(id_from, id_to):
+    while True:
+        if hackerkoffer.patchpanel[id_from] == id_to:
+            return
+        time.sleep(1)
+
+
+def wait_on_panel_unplug():
+    while True:
+        if hackerkoffer.patchpanel[0] == 255 \
+                and hackerkoffer.patchpanel[1] == 255 \
+                and hackerkoffer.patchpanel[2] == 255 \
+                and hackerkoffer.patchpanel[3] == 255 \
+                and hackerkoffer.patchpanel[4] == 255:
+            return
+        time.sleep(1)
+
+
+def test_panels():
+    for i in range(5):
+        print("Plug cabel from %d to %d" % (i,i))
+        wait_on_panel_plug(i,i)
+        print("Unplug cabel")
+        wait_on_panel_unplug()
+
+
 def test_all_outputs():
     print("BEGINNING OUTPUT TESTS")
     test_all_leds()
@@ -97,6 +123,7 @@ def test_all_inputs():
     print("BEGINNING INPUT TESTS")
     test_inputs()
     test_potis()
+    test_panels()
 
 
 def test_all():

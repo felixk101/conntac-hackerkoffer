@@ -18,6 +18,7 @@ class Hackerkoffer:
         self.patchpanel = []
         self.led = []
         self.seg7 = []
+        self.display = [[0 for x in range(128)] for y in range(64)]
 
         for i in range(18):
             self.input.append(False)
@@ -25,7 +26,7 @@ class Hackerkoffer:
         for i in range(4):
             self.poti.append(0)
 
-        for i in range(4):
+        for i in range(5):
             self.patchpanel.append(255)
 
         for i in range(11):
@@ -33,7 +34,6 @@ class Hackerkoffer:
 
         for i in range(4):
             self.seg7.append(self.SEG7_CLEAR)
-
 
     def callback_inputs(self, id, value):
         print("Input %d: %d" % (id, value))
@@ -83,6 +83,10 @@ class Hackerkoffer:
 
     def seg7_number(self, id, number):
         self.seg7_raw(id, self.SEG7_NUMBERS[number])
+
+    def set_pixel(self, x, y, state):
+        self.ser.write(b"d %d %d %d" % (x,y,state))
+        self.display[x][y] = state
 
 
 hackerkoffer = Hackerkoffer()
