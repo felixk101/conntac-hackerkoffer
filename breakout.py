@@ -46,19 +46,21 @@ class Entity:
         self.height = 11
 
     def render(self, display):
-        for y in range(start=self.pos[1] - (self.height - 1) / 2, stop=self.pos[1] + (self.height - 1) / 2):
-            for x in range(start=self.pos[0] - (self.width-1)/2, stop=self.pos[0] + (self.width-1)/2):
+        for y in range(int(self.pos[1] - (self.height - 1) / 2),
+                           int(self.pos[1] + (self.height - 1) / 2) + 1):
+            for x in range(int(self.pos[0] - (self.width - 1) / 2),
+                           int(self.pos[0] + (self.width - 1) / 2) + 1):
                 display[x][y] = 1
 
 
 class Player(Entity):
     def __init__(self):
-        super().__init__(64, 31)
+        super().__init__((64, 6), 31)
 
 
 class Ball(Entity):
     def __init__(self):
-        super().__init__((64, 25), 6)
+        super().__init__((64, 25), 5)
         self.height = self.width
 
 
