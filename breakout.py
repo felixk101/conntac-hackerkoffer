@@ -1,6 +1,8 @@
 
 import itertools
 import time
+import random
+import math
 
 import numpy as np
 
@@ -12,6 +14,12 @@ BR_W = 13
 class Game:
     def __init__(self):
         self.init_game()
+
+    def start_game(self):
+        while True:
+            game.update()
+            game.render()
+            time.sleep(0.1)
 
     def init_game(self):
         self.display = np.zeros(shape=(DSP_W, DSP_H), dtype=np.int16)
@@ -123,7 +131,7 @@ class Ball(Entity):
     def __init__(self):
         super().__init__((64, 25), 5)
         self.height = self.width
-        self.direction = (0.25, 0.75)
+        self.direction = (rotate((0, 1), random.randint(-45, 45)))
 
     def calc_new_pos(self):
         return self.pos[0] + self.direction[0], self.pos[1] + self.direction[1]
@@ -159,6 +167,14 @@ class Wall:
     def render(self, display):
         display += self.wall
 
+def rotate(vector, degrees):
+    a = np.radians(degrees)
+    ca, sa = math.cos(a), math.sin(a)
+    rotation_matrix = np.array(
+        [[ca, -sa],
+         [sa, ca]])
+    result = rotation_matrix.dot(vector)
+    return result
 
 def cut_to_length(vector, length):
     return length * (vector / np.linalg.norm(vector))
@@ -173,7 +189,4 @@ def angle(vector_a, vector_b):
 
 if __name__ == '__main__':
     game = Game()
-    while True:
-        game.update()
-        game.render()
-        time.sleep(0.1)
+    game.start_game()
