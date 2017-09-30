@@ -22,7 +22,7 @@ class Game:
 
 
     def update(self):
-        pass
+        self.ball.pos = self.ball.calc_new_pos()
 
     def render(self):
         new_display = np.zeros(shape=(DSP_W, DSP_H), dtype=np.int16)
@@ -58,7 +58,10 @@ class Entity:
                            int(self.pos[1] + (self.height - 1) / 2) + 1):
             for x in range(int(self.pos[0] - (self.width - 1) / 2),
                            int(self.pos[0] + (self.width - 1) / 2) + 1):
-                display[x][y] = 1
+                try:
+                    display[x][y] = 1
+                except IndexError:
+                    continue
 
 
 class Player(Entity):
@@ -70,6 +73,20 @@ class Ball(Entity):
     def __init__(self):
         super().__init__((64, 25), 5)
         self.height = self.width
+        self.direction = (0, 1)
+        self.rotation = 180
+
+    def calc_new_pos(self):
+        return (self.pos[0] + self.direction[0], self.pos[1] + self.direction[1])
+
+    @property
+    def direction(self):
+        return util.rotate(np.array((1.0, 0.0)), self.rotation)
+
+    @direction.setter
+    def direction(self, dir) -> None:
+        x, y = dir[0], dir[1]
+        self.rotation = math.atan2(-y, x) * 180 / math.pi
 
 
 class Brick(Entity):
@@ -80,5 +97,6 @@ class Brick(Entity):
 if __name__ == '__main__':
     game = Game()
     while True:
+        game.update()
         game.render()
         time.sleep(1)
