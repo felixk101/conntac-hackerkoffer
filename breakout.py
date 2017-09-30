@@ -6,6 +6,8 @@ import math
 import os
 
 import numpy as np
+from PIL import Image
+import Adafruit_SSD1306
 
 from hackerkoffer_lib.hackerkoffer_lib import start, hackerkoffer
 
@@ -17,8 +19,11 @@ BR_W = 13
 class Game:
     def __init__(self, koffer):
         self.koffer = koffer
+        self.frame = 0
         self.init_game()
         self.slider_pos = 0
+        self.oled = Adafruit_SSD1306.SSD1306_128_64(rst=24)
+        self.oled.begin()
 
     def handle_poti(self, id, value):
         if not id == 3: return
@@ -27,8 +32,10 @@ class Game:
     def start_game(self):
         while True:
             game.update()
-            game.render()
+            if self.frame % 5 == 0:
+                game.render()
             time.sleep(0.1)
+            self.frame += 1
 
     def init_game(self):
         self.display = np.zeros(shape=(DSP_W, DSP_H), dtype=np.int16)
@@ -83,15 +90,14 @@ class Game:
         for brick in self.bricks:
             brick.render(new_display)
         self.display = new_display
-        self.print_display()
+        #self.print_display()
+        self.write_oled()
         self.print_score()
 
     def print_score(self):
         digits = str(self.score)
-        self.koffer.seg7_number(0, int(digits[0]))
-        self.koffer.seg7_number(1, int(digits[1]))
-        self.koffer.seg7_number(2, int(digits[2]))
-        self.koffer.seg7_number(3, int(digits[3]))
+        for i in range(len(digits)):
+            self.koffer.seg7_number(i, int(digits[i]))
 
     def print_display(self):
         str = '\n'*60
@@ -107,6 +113,18 @@ class Game:
         str += "-" * 128 + "\n"
         print(str)
 
+    def write_oled(self):
+        self.oled.clear()
+        img = Image.new('1', (128, 64), "white")
+        pixels = img.load()
+        for i in range(img.size[0]):
+            for j in range(img.size[1]):
+                if self.display[i, j]:
+                    pixels[i, j] = 1
+                else:
+                    pixels[i, j] = 0
+        self.oled.image(img)
+        self.oled.display()
 
 class Entity:
     def __init__(self, pos, width):
