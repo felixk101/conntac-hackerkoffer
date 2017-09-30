@@ -1,4 +1,6 @@
 
+import itertools
+
 import numpy as np
 import time
 import math
@@ -25,9 +27,12 @@ class Game:
 
     def update(self):
         self.ball.pos = self.ball.calc_new_pos()
-        for brick in self.bricks:
-            if self.ball.collide(brick.displayed):
-                self.bricks.remove(brick)
+        for entity in itertools.chain((self.player,), (self.wall,), self.bricks):
+            result = self.ball.collide(entity.displayed)
+            if np.any(result):
+                slice = result[self.ball.x_min:self.ball.x_max + 1, self.ball.y_min:self.ball.y_max + 1]
+                self.ball.bounce(slice)
+                self.bricks.remove(entity)
 
     def render(self):
         new_display = np.zeros(shape=(DSP_W, DSP_H), dtype=np.int16)
@@ -66,12 +71,25 @@ class Entity:
         self.render(disp)
         return disp
 
+    @property
+    def x_min(self):
+        return int(self.pos[0] - (self.width - 1) / 2)
+
+    @property
+    def x_max(self):
+        return int(self.pos[0] + (self.width - 1) / 2)
+
+    @property
+    def y_min(self):
+        return int(self.pos[1] - (self.height - 1) / 2)
+
+    @property
+    def y_max(self):
+        return int(self.pos[1] + (self.height - 1) / 2)
 
     def render(self, display):
-        for y in range(int(self.pos[1] - (self.height - 1) / 2),
-                           int(self.pos[1] + (self.height - 1) / 2) + 1):
-            for x in range(int(self.pos[0] - (self.width - 1) / 2),
-                           int(self.pos[0] + (self.width - 1) / 2) + 1):
+        for y in range(self.y_min, self.y_max + 1):
+            for x in range(self.x_min, self.x_max + 1):
                 try:
                     display[x][y] = 1
                 except IndexError:
@@ -79,7 +97,7 @@ class Entity:
 
     def collide(self, displayed_entity):
         result = np.logical_and(self.displayed, displayed_entity)
-        return np.any(result)
+        return result
 
 
 
@@ -92,20 +110,29 @@ class Ball(Entity):
     def __init__(self):
         super().__init__((64, 25), 5)
         self.height = self.width
-        self.rotation = 180
+        self.rotation = 119
 
     def calc_new_pos(self):
         return (self.pos[0] + self.direction[0], self.pos[1] + self.direction[1])
 
     @property
     def direction(self):
-        return rotate(np.array((0.0, -1.0)), self.rotation)
+        return rotate(np.array((0.0, 1.0)), self.rotation)
 
     @direction.setter
     def direction(self, dir) -> None:
         x, y = dir[0], dir[1]
         self.rotation = math.atan2(-y, x) * 180 / math.pi
 
+    def bounce(self, slice):
+        hits = []
+        for x, row in enumerate(slice):
+            for y, pixel in enumerate(row):
+                if pixel:
+                    hits.append((x - int(self.width/2), y - int(self.width / 2)))
+        reflect_vec = cut_to_length(-np.sum(np.array(hits), axis=0), 1)
+        self.direction = -(self.direction - 2 * np.dot(self.direction, reflect_vec) * reflect_vec)
+        pass
 
 class Brick(Entity):
     def __init__(self, pos):
@@ -120,6 +147,10 @@ class Wall:
             self.wall[DSP_W - 1, y] = 1
         for x in range(DSP_W):
             self.wall[x, 0] = 1
+
+    @property
+    def displayed(self):
+        return self.wall
 
     def render(self, display):
         display += self.wall
