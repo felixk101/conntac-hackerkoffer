@@ -6,6 +6,8 @@ import math
 
 import numpy as np
 
+from hackerkoffer_lib.hackerkoffer_lib import start, hackerkoffer
+
 DSP_W = 128
 DSP_H = 64
 
@@ -14,6 +16,11 @@ BR_W = 13
 class Game:
     def __init__(self):
         self.init_game()
+        self.slider_pos = 0
+
+    def handle_poti(self, id, value):
+        if not id == "A3": return
+        self.slider_pos = value
 
     def start_game(self):
         while True:
@@ -42,6 +49,7 @@ class Game:
             self.player = Player()
 
     def update(self):
+        self.player.pos = (self.slider_pos / 32, self.player.pos[1])
         self.ball.pos = self.ball.calc_new_pos()
         if self.ball.pos[1] >= DSP_H:
             self.game_over()
@@ -189,4 +197,6 @@ def angle(vector_a, vector_b):
 
 if __name__ == '__main__':
     game = Game()
+    hackerkoffer.callback_potis = game.handle_poti
+    start()
     game.start_game()
