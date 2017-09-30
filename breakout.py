@@ -16,9 +16,9 @@ BR_W = 13
 
 class Game:
     def __init__(self, koffer):
+        self.koffer = koffer
         self.init_game()
         self.slider_pos = 0
-        self.koffer = koffer
 
     def handle_poti(self, id, value):
         if not id == 3: return
