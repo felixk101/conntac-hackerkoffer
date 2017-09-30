@@ -1,6 +1,6 @@
-
 import numpy as np
 import time
+import math
 
 DSP_W = 128
 DSP_H = 64
@@ -23,6 +23,9 @@ class Game:
 
     def update(self):
         self.ball.pos = self.ball.calc_new_pos()
+        for brick in self.bricks:
+            if self.ball.collide(brick.displayed):
+                self.bricks.remove(brick)
 
     def render(self):
         new_display = np.zeros(shape=(DSP_W, DSP_H), dtype=np.int16)
@@ -34,17 +37,18 @@ class Game:
         self.print_display()
 
     def print_display(self):
-        print('\n'*80) # prints 80 line breaks
-        print("-" * 128)
+        str = '\n'*60
+        str += "-" * 128 + "\n"
         for row in self.display.T:
-            print("|", end="")
+            str += "|"
             for pixel in row:
                 if pixel == 0:
-                    print(" ", end="")
+                    str += " "
                 else:
-                    print("X", end="")
-            print("|")
-        print("-" * 128)
+                    str += "X"
+            str += "|\n"
+        str += "-" * 128 + "\n"
+        print(str)
 
 
 class Entity:
@@ -52,6 +56,13 @@ class Entity:
         self.pos = pos
         self.width = width
         self.height = 3
+
+    @property
+    def displayed(self):
+        disp = np.zeros(shape=(DSP_W, DSP_H))
+        self.render(disp)
+        return disp
+
 
     def render(self, display):
         for y in range(int(self.pos[1] - (self.height - 1) / 2),
@@ -62,6 +73,11 @@ class Entity:
                     display[x][y] = 1
                 except IndexError:
                     continue
+
+    def collide(self, displayed_entity):
+        result = np.logical_and(self.displayed, displayed_entity)
+        return np.any(result)
+
 
 
 class Player(Entity):
@@ -81,12 +97,14 @@ class Ball(Entity):
 
     @property
     def direction(self):
-        return util.rotate(np.array((1.0, 0.0)), self.rotation)
+        return np.array((1.0, -1.0))
+        #return rotate(np.array((1.0, 0.0)), self.rotation)
 
     @direction.setter
     def direction(self, dir) -> None:
-        x, y = dir[0], dir[1]
-        self.rotation = math.atan2(-y, x) * 180 / math.pi
+        pass
+        #x, y = dir[0], dir[1]
+        #self.rotation = math.atan2(-y, x) * 180 / math.pi
 
 
 class Brick(Entity):
@@ -99,4 +117,5 @@ if __name__ == '__main__':
     while True:
         game.update()
         game.render()
-        time.sleep(1)
+        time.sleep(0.1)
+
