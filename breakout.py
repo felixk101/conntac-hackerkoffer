@@ -32,7 +32,10 @@ class Game:
             if np.any(result):
                 slice = result[self.ball.x_min:self.ball.x_max + 1, self.ball.y_min:self.ball.y_max + 1]
                 self.ball.bounce(slice)
-                self.bricks.remove(entity)
+                try:
+                    self.bricks.remove(entity)
+                except ValueError:
+                    continue
 
     def render(self):
         new_display = np.zeros(shape=(DSP_W, DSP_H), dtype=np.int16)
@@ -110,7 +113,7 @@ class Ball(Entity):
     def __init__(self):
         super().__init__((64, 25), 5)
         self.height = self.width
-        self.rotation = 119
+        self.rotation = 180
 
     def calc_new_pos(self):
         return (self.pos[0] + self.direction[0], self.pos[1] + self.direction[1])
