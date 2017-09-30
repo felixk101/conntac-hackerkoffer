@@ -42,8 +42,8 @@ class Hackerkoffer:
         for c in data:
             self.ser.write(bytes(c, "utf-8"))
 
-        while serial.outWaiting() > 0:
-            pass
+        #while self.ser.out_waiting() > 0:
+        #    pass
 
     def callback_inputs(self, id, value):
         print("Input %d: %d" % (id, value))
@@ -125,6 +125,8 @@ def handle_potis(data):
 def handle_data(data):
     if len(data) <= 0:
         return
+
+    print("DEBUG: %s" % data)
 
     typ = data[0]
     data = data[2:]
