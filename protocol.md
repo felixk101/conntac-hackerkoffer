@@ -78,7 +78,7 @@ ID: 17
 
 Wert: 0,1
 
-###
+### 7-Segment-Display
 Typ: `C`
 
 ID: 0-3 (rechts nach links)
