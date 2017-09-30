@@ -1,3 +1,4 @@
+
 import numpy as np
 import time
 import math
@@ -97,14 +98,12 @@ class Ball(Entity):
 
     @property
     def direction(self):
-        return np.array((1.0, -1.0))
-        #return rotate(np.array((1.0, 0.0)), self.rotation)
+        return rotate(np.array((1.0, 0.0)), self.rotation)
 
     @direction.setter
     def direction(self, dir) -> None:
-        pass
-        #x, y = dir[0], dir[1]
-        #self.rotation = math.atan2(-y, x) * 180 / math.pi
+        x, y = dir[0], dir[1]
+        self.rotation = math.atan2(-y, x) * 180 / math.pi
 
 
 class Brick(Entity):
@@ -112,10 +111,30 @@ class Brick(Entity):
         super().__init__(pos, BR_W)
 
 
+def rotate(vector, degrees):
+    a = np.radians(degrees)
+    ca, sa = math.cos(a), math.sin(a)
+    rotation_matrix = np.array(
+        [[ca, -sa],
+         [sa, ca]])
+    result = rotation_matrix.dot(vector)
+    return result
+
+
+def cut_to_length(vector, length):
+    return length * (vector / np.linalg.norm(vector))
+
+
+def angle(vector_a, vector_b):
+    if np.linalg.norm(vector_a) == 0 or np.linalg.norm(vector_b) == 0:
+        return 0
+    else:
+        return (vector_a * vector_b) / (np.linalg.norm(vector_a) * np.linalg.norm(vector_b))
+
+
 if __name__ == '__main__':
     game = Game()
     while True:
         game.update()
         game.render()
-        time.sleep(0.1)
-
+        time.sleep(0.3)
