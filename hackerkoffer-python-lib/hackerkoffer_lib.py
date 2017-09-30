@@ -16,15 +16,24 @@ class Hackerkoffer:
         self.input = []
         self.poti = []
         self.patchpanel = []
+        self.led = []
+        self.seg7 = []
 
-        for i in range(0,14):
+        for i in range(18):
             self.input.append(False)
 
-        for i in range(0,3):
+        for i in range(4):
             self.poti.append(0)
 
-        for i in range(0,4):
+        for i in range(4):
             self.patchpanel.append(255)
+
+        for i in range(11):
+            self.led.append(False)
+
+        for i in range(4):
+            self.seg7.append(self.SEG7_CLEAR)
+
 
     def callback_inputs(self, id, value):
         print("Input %d: %d" % (id, value))
@@ -37,6 +46,7 @@ class Hackerkoffer:
 
     def _led(self, id, state=0):
         self.ser.write(b"O %d %d;" % (id, state))
+        self.led[id] = state
 
     def led_on(self, id):
         self._led(id, 1)
@@ -47,6 +57,7 @@ class Hackerkoffer:
     # frequency not used yet
     def _piepser(self, id, state=0, frequency=0):
         self.ser.write(b"O %d %d;" % (id, state))
+        self.input[id] = state
 
     def piepser_on(self, id, frequency=0):
         self._piepser(id, 1, frequency)
@@ -57,6 +68,7 @@ class Hackerkoffer:
 
     def _fan(self, id, state=0, frequency=0):
         self.ser.write(b"O %d %d;" % (id, state))
+        self.input[id] = state
 
     def fan_on(self, id, frequency=0):
         self._fan(id, 1, frequency)
@@ -67,6 +79,7 @@ class Hackerkoffer:
     # display
     def seg7_raw(self, id, raw):
         self.ser.write(b"c %d %d;" % (id, int(raw)))
+        self.seg7[id] = int(raw)
 
     def seg7_number(self, id, number):
         self.seg7_raw(id, self.SEG7_NUMBERS[number])
