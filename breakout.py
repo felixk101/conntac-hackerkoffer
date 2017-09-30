@@ -1,9 +1,9 @@
 
 import itertools
+import math
+import time
 
 import numpy as np
-import time
-import math
 
 DSP_W = 128
 DSP_H = 64
@@ -12,10 +12,14 @@ BR_W = 13
 
 class Game:
     def __init__(self):
+        self.init_game()
+
+    def init_game(self):
         self.display = np.zeros(shape=(DSP_W, DSP_H), dtype=np.int16)
         self.player = Player()
         self.ball = Ball()
         self.wall = Wall()
+        self.lives = 3
 
 
         self.bricks = []
@@ -24,9 +28,18 @@ class Game:
                 self.bricks.append(Brick((colpos * (BR_W+3) + 1 + BR_W/2, 2 + rowpos * 4)))
 
 
+    def game_over(self):
+        self.lives -= 1
+        if self.lives <= 0:
+            self.init_game()
+        else:
+            self.ball = Ball()
+            self.player = Player()
 
     def update(self):
         self.ball.pos = self.ball.calc_new_pos()
+        if self.ball.pos[1] >= DSP_H:
+            self.game_over()
         for entity in itertools.chain((self.player,), (self.wall,), self.bricks):
             result = self.ball.collide(entity.displayed)
             if np.any(result):
