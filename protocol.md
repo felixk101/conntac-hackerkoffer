@@ -1,5 +1,5 @@
 ![Layout](layout.png)
-
+Hinweis: `D = I`
 
 ## Datenformat (senden und empfangen)
 ```t ID data;```
