@@ -1,6 +1,5 @@
 
 import itertools
-import math
 import time
 
 import numpy as np
@@ -21,12 +20,10 @@ class Game:
         self.wall = Wall()
         self.lives = 3
 
-
         self.bricks = []
         for rowpos in range(5):
             for colpos in range(8):
                 self.bricks.append(Brick((colpos * (BR_W+3) + 1 + BR_W/2, 2 + rowpos * 4)))
-
 
     def game_over(self):
         self.lives -= 1
@@ -126,19 +123,10 @@ class Ball(Entity):
     def __init__(self):
         super().__init__((64, 25), 5)
         self.height = self.width
-        self.rotation = 180
+        self.direction = (0.25, 0.75)
 
     def calc_new_pos(self):
-        return (self.pos[0] + self.direction[0], self.pos[1] + self.direction[1])
-
-    @property
-    def direction(self):
-        return rotate(np.array((0.0, 1.0)), self.rotation)
-
-    @direction.setter
-    def direction(self, dir) -> None:
-        x, y = dir[0], dir[1]
-        self.rotation = math.atan2(-y, x) * 180 / math.pi
+        return self.pos[0] + self.direction[0], self.pos[1] + self.direction[1]
 
     def bounce(self, slice):
         hits = []
@@ -147,7 +135,7 @@ class Ball(Entity):
                 if pixel:
                     hits.append((x - int(self.width/2), y - int(self.width / 2)))
         reflect_vec = cut_to_length(-np.sum(np.array(hits), axis=0), 1)
-        self.direction = -(self.direction - 2 * np.dot(self.direction, reflect_vec) * reflect_vec)
+        self.direction = self.direction - 2 * np.dot(self.direction, reflect_vec) * reflect_vec
         pass
 
 class Brick(Entity):
@@ -172,16 +160,6 @@ class Wall:
         display += self.wall
 
 
-def rotate(vector, degrees):
-    a = np.radians(degrees)
-    ca, sa = math.cos(a), math.sin(a)
-    rotation_matrix = np.array(
-        [[ca, -sa],
-         [sa, ca]])
-    result = rotation_matrix.dot(vector)
-    return result
-
-
 def cut_to_length(vector, length):
     return length * (vector / np.linalg.norm(vector))
 
@@ -198,4 +176,4 @@ if __name__ == '__main__':
     while True:
         game.update()
         game.render()
-        time.sleep(0.3)
+        time.sleep(0.1)
