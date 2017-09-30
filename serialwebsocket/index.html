@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebSocket demo</title>
+    </head>
+    <body>
+        <button id="I 1" type="button">Knopf I1 (Kreuz)</button>
+        <script>
+            var ws = new WebSocket("ws://127.0.0.1:5678/"),
+                messages = document.createElement('ul');
+            ws.onopen = function() {
+                ws.send("Felix");
+                ws.send("Felix again");
+            };
+            ws.onmessage = function (event) {
+                console.log(event);
+                var messages = document.getElementsByTagName('ul')[0],
+                    message = document.createElement('li'),
+                    content = document.createTextNode(event.data);
+                message.appendChild(content);
+                messages.appendChild(message);
+                if (event.data.startsWith('I')) {
+                    var filePart = event.data.replace("I","i").replace(/ /g,"_").substring(0,event.data.length-1);
+                    var filePath = 'sounds/'+filePart+'.mp3';
+                    console.log('trying to play '+filePath);
+                    var audio = new Audio(filePath);
+                    audio.play();
+                }
+            };
+            document.body.appendChild(messages);
+
+            window.addEventListener("load",function() { //onload
+              initializeListeners();
+            });
+            function initializeListeners() {
+              var bns = document.getElementsByTagName("button");
+              for (i = 0; i < bns.length; i++) {
+                bns[i].addEventListener("click", function(a) {
+                    ws.send(a.currentTarget.id+" 1;");
+                });
+              }
+            }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LCD Display</title>
+</head>
+<body>
+
+<!--
+<canvas id="lcd_canvas" width="512" height="256">
+    Your browser does not support the canvas type
+</canvas>
+
+<script type="text/javascript" src="lcd_display.js"></script>
+-->
+
+    <object id="koffer-svg" type="image/svg+xml" data="conntac-hackerkoffer.svg">
+
+    <script>
+        var a = document.getElementById("koffer-svg");
+
+        // It's important to add an load event listener to the object,
+        // as it will load the svg doc asynchronously
+        a.addEventListener("load",function(){
+
+            // get the inner DOM of alpha.svg
+            var svgDoc = a.contentDocument;
+            // get the inner element by id
+            var delta = svgDoc.getElementById("O0");
+            // add behaviour
+            delta.addEventListener("mousedown",function(){
+                alert('hello world!')
+            }, false);
+
+
+            delta.getElementById("circle");
+        }, false);
+    </script>
+</body>
+</html>

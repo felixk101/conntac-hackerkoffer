@@ -1,0 +1,303 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1437" height="1080" viewBox="0 0 1437 1080">
+  <title>conntac-hackerkoffer</title>
+  <g id="Backgroud">
+    <rect x="114" y="105.5" width="1188.5" height="874" style="fill: #1a1a1a"/>
+    <polygon points="118.5 106 76 65 1361 65 1304 106 118.5 106" style="fill: gray"/>
+    <polygon points="1302 106 1302 980 1361 1016 1361 65 1302 106" style="fill: #333"/>
+    <polygon points="120 106 76 65 76 1023 120 980 120 106" style="fill: #333"/>
+    <polygon points="1304 980 118.5 980 76 1023 1361 1016 1304 980" style="fill: gray"/>
+  </g>
+  <g id="Schriftzug">
+    <text transform="translate(550.5 411.7)" style="font-size: 47px;fill: #fff;font-family: ArialNarrow-Bold, Arial Narrow;font-weight: 700">HACKERKOFFER</text>
+  </g>
+  <g id="I13">
+    <circle cx="1046" cy="832" r="86" style="stroke: #666;stroke-miterlimit: 10"/>
+    <circle cx="1045.5" cy="831.5" r="72" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle cx="1046" cy="831" r="51.5" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <rect x="1041" y="812" width="10" height="44"/>
+  </g>
+  <g id="I12">
+    <circle cx="377" cy="833" r="86" style="stroke: #666;stroke-miterlimit: 10"/>
+    <circle cx="376.5" cy="832.5" r="72" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle cx="377" cy="832" r="51.5" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <rect x="372" y="813" width="10" height="44"/>
+  </g>
+  <g id="O17">
+    <rect x="1142" y="137" width="13" height="233" rx="5.6" ry="5.6" transform="translate(515.6 -737.9) rotate(45)" style="stroke: #666;stroke-miterlimit: 10"/>
+    <rect x="1177.8" y="198.9" width="13" height="181.55" rx="4.9" ry="4.9" transform="translate(551.7 -752.6) rotate(45)" style="stroke: #666;stroke-miterlimit: 10"/>
+    <rect x="1108.8" y="129.9" width="13" height="181.55" rx="4.9" ry="4.9" transform="translate(482.7 -724) rotate(45)" style="stroke: #666;stroke-miterlimit: 10"/>
+  </g>
+  <g id="I0">
+    <circle cx="257.5" cy="242.5" r="106.5" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <circle cx="257.5" cy="242.5" r="47.9" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
+  </g>
+  <g id="C0">
+    <rect id="bg" x="653" y="200" width="83" height="107.76" style="fill: #fff;stroke: #999;stroke-miterlimit: 10"/>
+    <polygon id="g" points="674 248.6 704.4 248.6 707.1 253.7 704.4 258.7 674 258.7 671.3 253.7 674 248.6" style="fill: #fa2936"/>
+    <rect id="a" x="675" y="211.9" width="28.4" height="10.09" style="fill: #fa2936"/>
+    <path id="b" d="M705.3,247.7V211.9h6.6c1.9,0,3.5,1.9,3.5,4.3v37h-6.4Z" style="fill: #fa2936"/>
+    <path id="f" d="M673.2,247.6V211.9h-6.6c-1.9,0-3.5,1.9-3.5,4.3v37h6.4Z" style="fill: #fa2936"/>
+    <rect id="d" x="675" y="286.2" width="28.4" height="10.09" transform="translate(1378.5 582.5) rotate(180)" style="fill: #fa2936"/>
+    <path id="e" d="M673.2,260.5v35.8h-6.6c-1.9,0-3.5-1.9-3.5-4.3V255h6.4Z" style="fill: #fa2936"/>
+    <path id="c" d="M705.3,260.6v35.7h6.6c1.9,0,3.5-1.9,3.5-4.3V255h-6.4Z" style="fill: #fa2936"/>
+    <circle id="dot" cx="724.1" cy="291.3" r="5" style="fill: #fa2936"/>
+  </g>
+  <g id="C1">
+    <rect id="bg-2" data-name="bg" x="570" y="200" width="83" height="107.76" style="fill: #fff;stroke: #999;stroke-miterlimit: 10"/>
+    <polygon id="g-2" data-name="g" points="591 248.6 621.4 248.6 624.1 253.7 621.4 258.7 591 258.7 588.3 253.7 591 248.6" style="fill: #fa2936"/>
+    <rect id="a-2" data-name="a" x="592" y="211.9" width="28.4" height="10.09" style="fill: #fa2936"/>
+    <path id="b-2" data-name="b" d="M622.3,247.7V211.9h6.6c1.9,0,3.5,1.9,3.5,4.3v37h-6.4Z" style="fill: #fa2936"/>
+    <path id="f-2" data-name="f" d="M590.2,247.6V211.9h-6.6c-1.9,0-3.5,1.9-3.5,4.3v37h6.4Z" style="fill: #fa2936"/>
+    <rect id="d-2" data-name="d" x="592" y="286.2" width="28.4" height="10.09" transform="translate(1212.5 582.5) rotate(180)" style="fill: #fa2936"/>
+    <path id="e-2" data-name="e" d="M590.2,260.5v35.8h-6.6c-1.9,0-3.5-1.9-3.5-4.3V255h6.4Z" style="fill: #fa2936"/>
+    <path id="c-2" data-name="c" d="M622.3,260.6v35.7h6.6c1.9,0,3.5-1.9,3.5-4.3V255h-6.4Z" style="fill: #fa2936"/>
+    <circle id="dot-2" data-name="dot" cx="641.1" cy="291.3" r="5" style="fill: #fa2936"/>
+  </g>
+  <g id="C2">
+    <rect id="bg-3" data-name="bg" x="487" y="200" width="83" height="107.76" style="fill: #fff;stroke: #999;stroke-miterlimit: 10"/>
+    <polygon id="g-3" data-name="g" points="508 248.6 538.4 248.6 541.1 253.7 538.4 258.7 508 258.7 505.3 253.7 508 248.6" style="fill: #fa2936"/>
+    <rect id="a-3" data-name="a" x="509" y="211.9" width="28.4" height="10.09" style="fill: #fa2936"/>
+    <path id="b-3" data-name="b" d="M539.3,247.7V211.9h6.6c1.9,0,3.5,1.9,3.5,4.3v37h-6.4Z" style="fill: #fa2936"/>
+    <path id="f-3" data-name="f" d="M507.2,247.6V211.9h-6.6c-1.9,0-3.5,1.9-3.5,4.3v37h6.4Z" style="fill: #fa2936"/>
+    <rect id="d-3" data-name="d" x="509" y="286.2" width="28.4" height="10.09" transform="translate(1046.5 582.5) rotate(180)" style="fill: #fa2936"/>
+    <path id="e-3" data-name="e" d="M507.2,260.5v35.8h-6.6c-1.9,0-3.5-1.9-3.5-4.3V255h6.4Z" style="fill: #fa2936"/>
+    <path id="c-3" data-name="c" d="M539.3,260.6v35.7h6.6c1.9,0,3.5-1.9,3.5-4.3V255h-6.4Z" style="fill: #fa2936"/>
+    <circle id="dot-3" data-name="dot" cx="558.1" cy="291.3" r="5" style="fill: #fa2936"/>
+  </g>
+  <g id="C3">
+    <rect id="bg-4" data-name="bg" x="404" y="200" width="83" height="107.76" style="fill: #fff;stroke: #999;stroke-miterlimit: 10"/>
+    <polygon id="g-4" data-name="g" points="425 248.6 455.4 248.6 458.1 253.7 455.4 258.7 425 258.7 422.3 253.7 425 248.6" style="fill: #fa2936"/>
+    <rect id="a-4" data-name="a" x="426" y="211.9" width="28.4" height="10.09" style="fill: #fa2936"/>
+    <path id="b-4" data-name="b" d="M456.3,247.7V211.9h6.6c1.9,0,3.5,1.9,3.5,4.3v37h-6.4Z" style="fill: #fa2936"/>
+    <path id="f-4" data-name="f" d="M424.2,247.6V211.9h-6.6c-1.9,0-3.5,1.9-3.5,4.3v37h6.4Z" style="fill: #fa2936"/>
+    <rect id="d-4" data-name="d" x="426" y="286.2" width="28.4" height="10.09" transform="translate(880.5 582.5) rotate(180)" style="fill: #fa2936"/>
+    <path id="e-4" data-name="e" d="M424.2,260.5v35.8h-6.6c-1.9,0-3.5-1.9-3.5-4.3V255h6.4Z" style="fill: #fa2936"/>
+    <path id="c-4" data-name="c" d="M456.3,260.6v35.7h6.6c1.9,0,3.5-1.9,3.5-4.3V255h-6.4Z" style="fill: #fa2936"/>
+    <circle id="dot-4" data-name="dot" cx="475.1" cy="291.3" r="5" style="fill: #fa2936"/>
+  </g>
+  <g id="A1">
+    <circle cx="949.7" cy="257.7" r="38.3" style="fill: #b5bab3"/>
+    <circle cx="949.7" cy="257.7" r="34.7" style="stroke: #999;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <circle cx="950.3" cy="257.1" r="29.3" style="fill: #fa2936;stroke: #d2414f;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <polygon points="962.9 224.2 943.7 252.9 952.1 251.7 955.7 260.1 967.7 226.6 962.9 224.2" style="fill: #fff"/>
+  </g>
+  <g id="A0">
+    <circle cx="832.3" cy="257.7" r="38.3" style="fill: #b5bab3"/>
+    <circle cx="832.3" cy="257.7" r="34.7" style="stroke: #999;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <circle cx="832.9" cy="257.1" r="29.3" style="fill: #fa2936;stroke: #d2414f;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <polygon points="845.4 224.2 826.3 252.9 834.7 251.7 838.3 260.1 850.2 226.6 845.4 224.2" style="fill: #fff"/>
+  </g>
+  <g id="P0w">
+    <circle cx="1045.5" cy="436.5" r="14" style="stroke: #666;stroke-miterlimit: 10"/>
+  </g>
+  <g id="P4w">
+    <circle cx="1045.5" cy="594.5" r="14" style="stroke: #666;stroke-miterlimit: 10"/>
+  </g>
+  <g id="P3w">
+    <circle cx="1045.5" cy="555.5" r="14" style="stroke: #666;stroke-miterlimit: 10"/>
+  </g>
+  <g id="P2w">
+    <circle cx="1045.5" cy="516.5" r="14" style="stroke: #666;stroke-miterlimit: 10"/>
+  </g>
+  <g id="P1w">
+    <circle cx="1045.5" cy="475.5" r="14" style="stroke: #666;stroke-miterlimit: 10"/>
+  </g>
+  <g id="I5">
+    <polygon points="309.6 577.2 281 560.7 252.3 577.2 252.3 610.3 281 626.8 309.6 610.3 309.6 577.2" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="ring" cx="281" cy="594" r="22" style="fill: #b5bab3"/>
+    <circle id="ring-2" data-name="ring" cx="281" cy="594" r="18.6" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="ring-3" data-name="ring" cx="281.4" cy="594.4" r="14.6"/>
+  </g>
+  <g id="I4">
+    <polygon points="386.6 499.2 358 482.7 329.3 499.2 329.3 532.3 358 548.8 386.6 532.3 386.6 499.2" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="ring-4" data-name="ring" cx="358" cy="516" r="22" style="fill: #b5bab3"/>
+    <circle id="ring-5" data-name="ring" cx="358" cy="516" r="18.6" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="ring-6" data-name="ring" cx="358.4" cy="516.4" r="14.6"/>
+  </g>
+  <g id="I3">
+    <polygon points="310.6 499.2 282 482.7 253.3 499.2 253.3 532.3 282 548.8 310.6 532.3 310.6 499.2" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="ring-7" data-name="ring" cx="282" cy="516" r="22" style="fill: #b5bab3"/>
+    <circle id="ring-8" data-name="ring" cx="282" cy="516" r="18.6" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="ring-9" data-name="ring" cx="282.4" cy="516.4" r="14.6"/>
+  </g>
+  <g id="I2">
+    <polygon points="233.6 499.2 205 482.7 176.3 499.2 176.3 532.3 205 548.8 233.6 532.3 233.6 499.2" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="ring-10" data-name="ring" cx="205" cy="516" r="22" style="fill: #b5bab3"/>
+    <circle id="ring-11" data-name="ring" cx="205" cy="516" r="18.6" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="ring-12" data-name="ring" cx="205.4" cy="516.4" r="14.6"/>
+  </g>
+  <g id="I1">
+    <polygon points="309.6 421.2 281 404.7 252.3 421.2 252.3 454.3 281 470.8 309.6 454.3 309.6 421.2" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="ring-13" data-name="ring" cx="281" cy="438" r="22" style="fill: #b5bab3"/>
+    <circle id="ring-14" data-name="ring" cx="281" cy="438" r="18.6" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="ring-15" data-name="ring" cx="281.4" cy="438.4" r="14.6"/>
+  </g>
+  <g id="P4">
+    <circle id="ring-16" data-name="ring" cx="1214.5" cy="592.5" r="23.5" style="fill: #b5bab3"/>
+    <circle id="ring-17" data-name="ring" cx="1214.9" cy="592.9" r="21.9" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="ring-18" data-name="ring" cx="1214.5" cy="592.5" r="13.4" style="fill: gray;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+  </g>
+  <g id="P3">
+    <circle id="ring-19" data-name="ring" cx="1137.5" cy="554.5" r="23.5" style="fill: #b5bab3"/>
+    <circle id="ring-20" data-name="ring" cx="1137.9" cy="554.9" r="21.9" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="ring-21" data-name="ring" cx="1137.5" cy="554.5" r="13.4" style="fill: gray;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+  </g>
+  <g id="P2">
+    <circle id="ring-22" data-name="ring" cx="1214.5" cy="514.5" r="23.5" style="fill: #b5bab3"/>
+    <circle id="ring-23" data-name="ring" cx="1214.9" cy="514.9" r="21.9" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="ring-24" data-name="ring" cx="1214.5" cy="514.5" r="13.4" style="fill: gray;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+  </g>
+  <g id="P1">
+    <circle id="ring-25" data-name="ring" cx="1137.5" cy="474.5" r="23.5" style="fill: #b5bab3"/>
+    <circle id="ring-26" data-name="ring" cx="1137.9" cy="474.9" r="21.9" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="ring-27" data-name="ring" cx="1137.5" cy="474.5" r="13.4" style="fill: gray;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+  </g>
+  <g id="P0">
+    <circle id="ring-28" data-name="ring" cx="1214.5" cy="435.5" r="23.5" style="fill: #b5bab3"/>
+    <circle id="ring-29" data-name="ring" cx="1214.9" cy="435.9" r="21.9" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="ring-30" data-name="ring" cx="1214.5" cy="435.5" r="13.4" style="fill: gray;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+  </g>
+  <g id="A3">
+    <rect x="531" y="803" width="359" height="10" style="fill: gray"/>
+    <rect x="757" y="774" width="159" height="68" style="fill: #fa2936"/>
+    <rect x="834" y="774" width="5" height="68" style="fill: #fff"/>
+    <rect x="885" y="774" width="12" height="68" style="fill: #f47a7f"/>
+    <rect x="775" y="774" width="12" height="68" style="fill: #f47a7f"/>
+    <rect x="795" y="774" width="1" height="68" style="fill: #cf303c"/>
+    <rect x="806" y="774" width="1" height="68" style="fill: #cf303c"/>
+    <rect x="815" y="774" width="1" height="68" style="fill: #cf303c"/>
+    <rect x="825" y="774" width="1" height="68" style="fill: #cf303c"/>
+    <rect x="847" y="774" width="1" height="68" style="fill: #cf303c"/>
+    <rect x="858" y="774" width="1" height="68" style="fill: #cf303c"/>
+    <rect x="867" y="774" width="1" height="68" style="fill: #cf303c"/>
+    <rect x="877" y="774" width="1" height="68" style="fill: #cf303c"/>
+  </g>
+  <g id="A2">
+    <rect x="531.5" y="724.5" width="359" height="10" style="fill: gray"/>
+    <rect x="511" y="696" width="159" height="68" style="fill: #fa2936"/>
+    <rect x="588" y="696" width="5" height="68" style="fill: #fff"/>
+    <rect x="639" y="696" width="12" height="68" style="fill: #f47a7f"/>
+    <rect x="529" y="696" width="12" height="68" style="fill: #f47a7f"/>
+    <rect x="549" y="696" width="1" height="68" style="fill: #cf303c"/>
+    <rect x="560" y="696" width="1" height="68" style="fill: #cf303c"/>
+    <rect x="569" y="696" width="1" height="68" style="fill: #cf303c"/>
+    <rect x="579" y="696" width="1" height="68" style="fill: #cf303c"/>
+    <rect x="601" y="696" width="1" height="68" style="fill: #cf303c"/>
+    <rect x="612" y="696" width="1" height="68" style="fill: #cf303c"/>
+    <rect x="621" y="696" width="1" height="68" style="fill: #cf303c"/>
+    <rect x="631" y="696" width="1" height="68" style="fill: #cf303c"/>
+  </g>
+  <g id="I10">
+    <circle id="ring-31" data-name="ring" cx="890" cy="592" r="29" style="fill: #b5bab3"/>
+    <circle id="ring-32" data-name="ring" cx="890" cy="592" r="24.5" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="ring-33" data-name="ring" cx="890" cy="592" r="20.5" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="ring-34" data-name="ring" cx="890.5" cy="591.5" r="13" style="fill: gray;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <path id="LED" d="M902,616.5c0,9.1-2,16.5-11.5,16.5S879,625.6,879,616.5s5.1-16.5,11.5-16.5S902,607.4,902,616.5Z" style="fill: #fa2936"/>
+    <path d="M896,595H885v-7c2-4,9-4,11,0Z" style="fill: #854f3b"/>
+    <circle id="LED-2" data-name="LED" cx="890.5" cy="603.5" r="14.5" style="fill: #fa2936"/>
+  </g>
+  <g id="I9">
+    <circle id="ring-35" data-name="ring" cx="801" cy="592" r="29" style="fill: #b5bab3"/>
+    <circle id="ring-36" data-name="ring" cx="801" cy="592" r="24.5" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="ring-37" data-name="ring" cx="801" cy="592" r="20.5" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="ring-38" data-name="ring" cx="801.5" cy="591.5" r="13" style="fill: gray;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <path id="LED-3" data-name="LED" d="M813,616.5c0,9.1-2,16.5-11.5,16.5S790,625.6,790,616.5s5.1-16.5,11.5-16.5S813,607.4,813,616.5Z" style="fill: #fa2936"/>
+    <path d="M807,595H796v-7c2-4,9-4,11,0Z" style="fill: #854f3b"/>
+    <circle id="LED-4" data-name="LED" cx="801.5" cy="603.5" r="14.5" style="fill: #fa2936"/>
+  </g>
+  <g id="I8">
+    <circle id="ring-39" data-name="ring" cx="712" cy="592" r="29" style="fill: #b5bab3"/>
+    <circle id="ring-40" data-name="ring" cx="712" cy="592" r="24.5" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="ring-41" data-name="ring" cx="712" cy="592" r="20.5" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="ring-42" data-name="ring" cx="712.5" cy="591.5" r="13" style="fill: gray;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <path id="LED-5" data-name="LED" d="M724,616.5c0,9.1-2,16.5-11.5,16.5S701,625.6,701,616.5s5.1-16.5,11.5-16.5S724,607.4,724,616.5Z" style="fill: #fa2936"/>
+    <path d="M718,595H707v-7c2-4,9-4,11,0Z" style="fill: #854f3b"/>
+    <circle id="LED-6" data-name="LED" cx="712.5" cy="603.5" r="14.5" style="fill: #fa2936"/>
+  </g>
+  <g id="I7">
+    <circle id="ring-43" data-name="ring" cx="622" cy="592" r="29" style="fill: #b5bab3"/>
+    <circle id="ring-44" data-name="ring" cx="622" cy="592" r="24.5" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="ring-45" data-name="ring" cx="622" cy="592" r="20.5" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="ring-46" data-name="ring" cx="622.5" cy="591.5" r="13" style="fill: gray;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <path id="LED-7" data-name="LED" d="M634,616.5c0,9.1-2,16.5-11.5,16.5S611,625.6,611,616.5s5.1-16.5,11.5-16.5S634,607.4,634,616.5Z" style="fill: #fa2936"/>
+    <path d="M628,595H617v-7c2-4,9-4,11,0Z" style="fill: #854f3b"/>
+    <circle id="LED-8" data-name="LED" cx="622.5" cy="603.5" r="14.5" style="fill: #fa2936"/>
+  </g>
+  <g id="I6">
+    <circle id="ring-47" data-name="ring" cx="533" cy="592" r="29" style="fill: #b5bab3"/>
+    <circle id="ring-48" data-name="ring" cx="533" cy="592" r="24.5" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="ring-49" data-name="ring" cx="533" cy="592" r="20.5" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="ring-50" data-name="ring" cx="533.5" cy="591.5" r="13" style="fill: gray;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <path id="LED-9" data-name="LED" d="M545,616.5c0,9.1-2,16.5-11.5,16.5S522,625.6,522,616.5s5.1-16.5,11.5-16.5S545,607.4,545,616.5Z" style="fill: #fa2936"/>
+    <path d="M539,595H528v-7c2-4,9-4,11,0Z" style="fill: #854f3b"/>
+    <circle id="LED-10" data-name="LED" cx="533.5" cy="603.5" r="14.5" style="fill: #fa2936"/>
+  </g>
+  <g id="O10">
+    <circle id="ring-51" data-name="ring" cx="848" cy="897" r="29" style="fill: #b5bab3"/>
+    <circle id="LED-11" data-name="LED" cx="848" cy="897" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
+  </g>
+  <g id="O9">
+    <circle id="ring-52" data-name="ring" cx="757" cy="897" r="29" style="fill: #b5bab3"/>
+    <circle id="LED-12" data-name="LED" cx="757" cy="897" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
+  </g>
+  <g id="O8">
+    <circle id="ring-53" data-name="ring" cx="670" cy="897" r="29" style="fill: #b5bab3"/>
+    <circle id="LED-13" data-name="LED" cx="670" cy="897" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
+  </g>
+  <g id="O7">
+    <circle id="ring-54" data-name="ring" cx="581" cy="897" r="29" style="fill: #b5bab3"/>
+    <circle id="LED-14" data-name="LED" cx="581" cy="897" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
+  </g>
+  <g id="O6">
+    <circle id="ring-55" data-name="ring" cx="1046" cy="684" r="29" style="fill: #b5bab3"/>
+    <circle id="LED-15" data-name="LED" cx="1046" cy="684" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
+  </g>
+  <g id="O5">
+    <circle id="ring-56" data-name="ring" cx="377" cy="684" r="29" style="fill: #b5bab3"/>
+    <circle id="LED-16" data-name="LED" cx="377" cy="684" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
+  </g>
+  <g id="O4">
+    <circle id="ring-57" data-name="ring" cx="890" cy="515" r="29" style="fill: #b5bab3"/>
+    <circle id="LED-17" data-name="LED" cx="890" cy="515" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
+  </g>
+  <g id="O3">
+    <circle id="ring-58" data-name="ring" cx="801" cy="515" r="29" style="fill: #b5bab3"/>
+    <circle id="LED-18" data-name="LED" cx="801" cy="515" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
+  </g>
+  <g id="O2">
+    <circle id="ring-59" data-name="ring" cx="712.3" cy="515.5" r="29" style="fill: #b5bab3"/>
+    <circle id="LED-19" data-name="LED" cx="712.3" cy="515.5" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
+  </g>
+  <g id="O1">
+    <circle id="ring-60" data-name="ring" cx="622.3" cy="515.5" r="29" style="fill: #b5bab3"/>
+    <circle id="LED-20" data-name="LED" cx="622.3" cy="515.5" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
+  </g>
+  <g id="O0">
+    <circle id="ring-61" data-name="ring" cx="533.5" cy="515.5" r="29" style="fill: #b5bab3"/>
+    <circle id="LED-21" data-name="LED" cx="533.5" cy="515.5" r="16" style="fill: #fa2936;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
+  </g>
+  <g id="I11">
+    <rect x="156.2" y="675" width="97.3" height="258" rx="12.7" ry="12.7" style="stroke: #666;stroke-miterlimit: 10"/>
+    <polygon points="247.5 806.2 204.9 781.7 162.3 806.2 162.3 855.4 204.9 880 247.5 855.4 247.5 806.2" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="ring-62" data-name="ring" cx="205" cy="831.2" r="32.7" style="fill: #b5bab3"/>
+    <circle id="ring-63" data-name="ring" cx="205" cy="831.2" r="27.6" style="fill: gray;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <rect x="172" y="666" width="66" height="88" style="fill: #fa2936;opacity: 0.7000000000000001"/>
+    <path d="M235.5,666H245a9,9,0,0,1,9,9V861a0,0,0,0,1,0,0H235.5a0,0,0,0,1,0,0V666A0,0,0,0,1,235.5,666Z" style="fill: #fa2936;opacity: 0.7000000000000001"/>
+    <path d="M164.5,666H175a0,0,0,0,1,0,0V862a0,0,0,0,1,0,0H156.5a0,0,0,0,1,0,0V674A8,8,0,0,1,164.5,666Z" style="fill: #fa2936;opacity: 0.7000000000000001"/>
+    <rect x="172" y="751" width="66" height="17" style="fill: #fa2936;opacity: 0.7000000000000001"/>
+    <circle cx="205.5" cy="831.5" r="20" style="fill: gray;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle cx="206" cy="832" r="15" style="fill: #fa2936"/>
+  </g>
+  <g id="I14">
+    <rect x="1167.2" y="674" width="97.3" height="258" rx="12.7" ry="12.7" style="stroke: #666;stroke-miterlimit: 10"/>
+    <polygon points="1258.5 805.2 1215.9 780.7 1173.3 805.2 1173.3 854.4 1215.9 879 1258.5 854.4 1258.5 805.2" style="fill: #ccc;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle id="ring-64" data-name="ring" cx="1216" cy="830.2" r="32.7" style="fill: #b5bab3"/>
+    <circle id="ring-65" data-name="ring" cx="1216" cy="830.2" r="27.6" style="fill: gray;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <rect x="1183" y="665" width="66" height="88" style="fill: #fa2936;opacity: 0.7000000000000001"/>
+    <path d="M1246.5,665h9.5a9,9,0,0,1,9,9V860a0,0,0,0,1,0,0h-18.5a0,0,0,0,1,0,0V665A0,0,0,0,1,1246.5,665Z" style="fill: #fa2936;opacity: 0.7000000000000001"/>
+    <path d="M1175.5,665H1186a0,0,0,0,1,0,0V861a0,0,0,0,1,0,0h-18.5a0,0,0,0,1,0,0V673A8,8,0,0,1,1175.5,665Z" style="fill: #fa2936;opacity: 0.7000000000000001"/>
+    <rect x="1183" y="750" width="66" height="17" style="fill: #fa2936;opacity: 0.7000000000000001"/>
+    <circle cx="1216.5" cy="830.5" r="20" style="fill: gray;stroke: #e6e6e6;stroke-miterlimit: 10"/>
+    <circle cx="1217" cy="831" r="15" style="fill: #fa2936"/>
+  </g>
+</svg>
