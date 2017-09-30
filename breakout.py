@@ -1,15 +1,28 @@
 
 import numpy as np
+import time
+
+DSP_W = 128
+DSP_H = 64
 
 class Game:
     def __init__(self):
-        self.display = np.zeros(shape=(128, 64), dtype=np.int16)r
-        self.player =
+        self.display = np.zeros(shape=(DSP_W, DSP_H), dtype=np.int16)
+        self.player = Player()
+        self.ball = Ball()
+        self.bricks = [Brick()]
 
 
 
     def update(self):
         pass
+
+    def render(self):
+        for pixel in self.display:
+            if 0:
+                print("O")
+            else:
+                print("X")
 
 class Entity:
     def __init__(self, pos, width):
@@ -41,4 +54,7 @@ class Brick(Entity):
 
 
 if __name__ == '__main__':
-    Game()
+    game = Game()
+    while True:
+        game.render()
+        time.sleep(0.05)
